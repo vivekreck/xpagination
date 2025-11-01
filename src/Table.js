@@ -20,6 +20,7 @@ export const Table = () => {
                 setMembers(data)
             } catch (error) {
                 console.error("Error fetching data:", error);
+                alert("Failed to fetch data. Please try again later.");
             }
         }
         getData();
